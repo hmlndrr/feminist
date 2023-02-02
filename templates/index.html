@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Feminist RCE</title>
+</head>
+<body>
+  <div class="min-h-screen grid place-content-center">
+    <form class="w-96 flex-col space-y-4" method="post">
+        <h1 class="text-center">
+          <span class="text-2xl font-bold">Feminist</span>
+          <span class="text-xl">RCE</span>
+        </h1>
+        <img 
+          src="https://img.freepik.com/premium-vector/feminism-concept-girl-power-feminist-movement-woman-with-megaphone-vector-illustration-flat_186332-1099.jpg?w=2000" 
+          alt="illustration"
+        />
+        <div>
+            {{ output }}
+        </div>
+        <input 
+          class="border p-2 w-full rounded-md" 
+          type="text" 
+          name="q" 
+        />
+        <input 
+          class="px-3 py-2 bg-blue-500 text-white rounded-md"
+          type="submit" 
+          value="submit" 
+        />
+        <a
+          class="text-blue-500 block" 
+          href="/code" 
+          target="_blank"
+        >
+          Check my code
+        </a>
+    </form>
+</div>
+</body>
+</html>
