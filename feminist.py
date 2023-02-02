@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_file
 from subprocess import PIPE, Popen
 
 
@@ -26,4 +26,4 @@ def query():
 
 @app.get("/code")
 def code():
-    return open(__file__).read()
+    return send_file(__file__)
