@@ -20,7 +20,7 @@ def index():
 def query():
     q = request.form['q']
     q = ["she" + word for word in q.split(' ')]
-    q = ' '.join(q)
+    q = ''.join(q)
     result = exec(q)
     return render_template('index.html', output=result)
 
